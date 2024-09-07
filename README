@@ -1,0 +1,10 @@
+Documentation:
+
+Works completely analogous to the Atlassian Marketplace API, so all querys can be used.
+
+- Clone Code from Github
+- create virtualenv via 'python -m venv ./venv'
+- activate virtualenv 'source ./venv/bin/activate'
+- install required python packages 'python -m pip install -r requirements.txt'
+- run local server 'cd REST_API_for_Atlassian_MP; python manage.py runserver'
+- contact the endpoint  http://127.0.0.1:8000/get-apps/{queries}
