@@ -50,7 +50,8 @@ def get_apps(request):
             
             return Response({'addons': apps})
         else:
-            return Response(f"Error: {response.status_code}", status=response.status_code)
+            # forward error message
+            return Response(response.json(), status=response.status_code)
 
     except requests.exceptions.Timeout:
         return Response("Request timed out", status=504)
